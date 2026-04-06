@@ -3,7 +3,7 @@ import { GoogleGenAI, Type } from '@google/genai';
 import { Sparkles, Copy, Check, Loader2, Wand2, Save, Braces, Bookmark, Trash2, X, History, Clock, RotateCcw, Target, Share2, Link } from 'lucide-react';
 
 // Initialize Gemini API
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
 interface Template {
   id: string;
